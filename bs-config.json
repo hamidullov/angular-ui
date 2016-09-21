@@ -1,0 +1,5 @@
+{
+  "port": 3002,
+  "files": ["./www_src/**/*.{html,htm,css,js}"],
+  "server": { "baseDir": "./www_src" }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "sites",
+  "version": "0.0.0",
+  "authors": [
+    "Khamidullov Ayrat <a.khamidullov@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.5.*",
+    "angular-translate": "~2.9.0",
+    "angular-ui-router": "~0.2.17"
+  }
+}
