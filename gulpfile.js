@@ -16,8 +16,6 @@ const revReplace = require('gulp-rev-replace');
 const cleanCSS = require('gulp-clean-css');
 
 
-
-
 const getFolder = () => process.env.FOLDER || 'www';
 
 

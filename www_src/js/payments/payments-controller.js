@@ -16,7 +16,6 @@
     }
 
     angular.module('myApp')
- 
-     .controller('PaymentsController',PaymentsController);
+     .controller('PaymentsController', PaymentsController);
     
 })();

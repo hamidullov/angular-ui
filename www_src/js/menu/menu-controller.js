@@ -4,8 +4,7 @@
 
     var MenuController = function($q, $scope, Config) {
         var vm = this;
-        $scope.version =  Config;
-      
+        $scope.config =  Config;
         activate();
 
         ////////////////

@@ -2,7 +2,7 @@
 'use strict';
 
     angular
-        .module('myApp.locale',['pascalprecht.translate'])
+        .module('myApp.locale', ['pascalprecht.translate'])
         .service('Locale', Locale);
 
     function Locale($translate) {

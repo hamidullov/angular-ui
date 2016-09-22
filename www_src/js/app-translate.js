@@ -11,6 +11,7 @@
 			HI: 'Hi',
 			BACK: 'To back',
 			VERSION: 'Version',
+			CONFIG: 'Configuration file'
         });
 
         $translateProvider.translations('ru', {
@@ -22,6 +23,7 @@
 			HI: 'Привет',
 			BACK: 'Назад',
 			VERSION: 'Версия',
+			CONFIG: 'Файл конфигурации'
         });
 
         $translateProvider.useSanitizeValueStrategy('escaped');
@@ -30,5 +32,5 @@
     };
 
     angular.module('myApp.translate', ["pascalprecht.translate"])
-		.config(["$translateProvider", Translate]);;
+		.config(Translate);;
 })();
