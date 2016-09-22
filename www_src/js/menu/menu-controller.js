@@ -17,6 +17,6 @@
 
     angular.module('myApp')
  
-     .controller('MenuController', ['$q', '$scope', 'Config', MenuController]);
+     .controller('MenuController', MenuController);
     
 })();

@@ -17,6 +17,6 @@
 
     angular.module('myApp')
  
-     .controller('PaymentsController', ['$q', '$scope', 'Config', PaymentsController]);
+     .controller('PaymentsController',PaymentsController);
     
 })();

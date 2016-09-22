@@ -6,6 +6,6 @@
     }
 
     angular.module('myApp')
-     .controller('AboutController', ['$q', '$scope', AboutController]);
+     .controller('AboutController', AboutController);
     
 })();
