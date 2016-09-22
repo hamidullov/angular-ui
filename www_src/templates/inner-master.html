@@ -1,9 +1,16 @@
-<div style="float: left;">
-    <a ui-sref="master.menu">to menu</a>
-</div>
-<div style="float: left;">
-    <section ui-view="mainContent"></section>
-</div>
-<div style="clear: both;">
-    <b>Footer</b>
+<div class="inner">
+    <div>
+        <div class="inner-left-menu">
+            <a ui-sref="master.menu">{{'BACK' | translate}}</a>
+        </div>
+        <div class="inner-content">
+            <section ui-view="mainContent"></section>
+        </div>
+    </div>
+    <div class="inner-footer">
+        <span>{{'FOOTER' | translate}}</span>
+         <div style="float:right;">
+        <a ng-click="changeLang()">{{currentLang()}}</a>
+    </div>
+    </div>
 </div>

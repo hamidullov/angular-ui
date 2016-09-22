@@ -1,10 +1,12 @@
-<div>
-    <b>Header</b>
-</div>
-<div>
+<header>
+    <span class="header-title">{{'HEADER' | translate}}</span>
+</header>
+<div class="content">
     <section ui-view="mainContent"></section>
-    
 </div>
-<div>
-    <b>Footer</b>
+<div class="footer">
+    <span class="footer-title">{{'FOOTER' | translate}}</span>
+    <div style="float:right;">
+        <a ng-click="changeLang()">{{currentLang()}}</a>
+    </div>
 </div>

@@ -1,0 +1,12 @@
+a {
+    cursor: pointer;
+}
+
+div {
+    &.app-container{
+        border: 1px black solid;
+    }
+}
+
+@import 'master';
+@import 'inner-master';
