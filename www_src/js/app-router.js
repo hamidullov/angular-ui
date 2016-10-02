@@ -69,7 +69,7 @@
 				}
             });
 
-        $urlRouterProvider.otherwise('/menu');
+        $urlRouterProvider.otherwise('/');
     };
 
     angular.module('myApp').config(['$stateProvider', '$urlRouterProvider', Router]);
