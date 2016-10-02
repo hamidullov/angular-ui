@@ -1,0 +1,21 @@
+<ui-select
+    ng-attr-required="{{required || undefined }}"
+    ng-model="inputModel.selected" 
+    ng-attr-name="{{elementName}}" 
+    id="{{labelTag}}" 
+    ng-attr-selected="{{ngModel}}"
+    ng-disabled = "ngDisabled"
+        />
+    <ui-select-match >
+        <div ng-if="selectedItemTemplate && !selectedKey" ng-bind-html="selectedItemTemplate  | toTrusted"></div>
+        <div ng-if="!selectedItemTemplate && !selectedKey">{{$select.selected.name}}</div>
+        <div ng-if="!selectedItemTemplate && selectedKey">{{$select.selected[selectedKey]}}</div>
+    </ui-select-match>
+    <ui-select-choices
+        refresh-delay = "400" 
+        repeat="{{repeat}}" refresh="refreshList($select.search)">
+        <div ng-if="listItemTemplate" ng-bind-html="compileItem(item)  | toTrusted"></div>
+        <span ng-if="!listItemTemplate">{{item.name}}</span>
+    </ui-select-choices>
+</ui-select>
+

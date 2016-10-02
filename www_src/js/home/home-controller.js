@@ -2,7 +2,7 @@
 'use strict';
 
 
-    var MenuController = function($q, $scope, Config) {
+    var HomeController = function($q, $scope, Config) {
         var vm = this;
         $scope.config =  Config;
         activate();
@@ -16,6 +16,6 @@
 
     angular.module('myApp')
  
-     .controller('MenuController', MenuController);
+     .controller('HomeController', HomeController);
     
 })();

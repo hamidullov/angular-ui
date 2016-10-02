@@ -23,16 +23,16 @@
 				controller: 'AppController'
 			})
 
-            .state('master.menu', {
-                url: "/menu",
+            .state('master.home', {
+                url: "/",
                 views: {
 					mainContent: {
-						templateUrl: "js/menu/menu.html",
-                        controller: "MenuController"
+						templateUrl: "js/home/home.html",
+                        controller: "HomeController"
 					}
 				}
             })
-            .state('inner.payments', {
+            .state('master.payments', {
                 url: "/payments",
                  views: {
 					mainContent: {
@@ -41,12 +41,30 @@
 					}
 				}
             })
-            .state('inner.about', {
+            .state('master.about', {
                 url: "/about",
                 views: {
 					mainContent: {
 						templateUrl: "js/about/about.html",
                         controller: "AboutController"
+					}
+				}
+            })
+			 .state('master.controls', {
+                url: "/controls",
+                views: {
+					mainContent: {
+						templateUrl: "js/controls/controls.html",
+                        controller: "ControlsController"
+					}
+				}
+            })
+			 .state('inner.other', {
+                url: "/other",
+                views: {
+					mainContent: {
+						templateUrl: "js/other/other.html",
+                        controller: "OtherController"
 					}
 				}
             });

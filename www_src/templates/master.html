@@ -1,12 +1,35 @@
-<header>
-    <span class="header-title">{{'HEADER' | translate}}</span>
-</header>
-<div class="content">
-    <section ui-view="mainContent"></section>
-</div>
-<div class="footer">
-    <span class="footer-title">{{'FOOTER' | translate}}</span>
-    <div style="float:right;">
-        <a ng-click="changeLang()">{{currentLang()}}</a>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" ui-sref="master.home">Project name</a>
+        </div>
+ 
+        <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a ui-sref="master.payments">{{'PAYMENTS' | translate}}</a></li>
+                <li><a ui-sref="master.about">{{'ABOUT' | translate}}</a></li>
+                <li><a ui-sref="master.controls">{{'CONTROLS' | translate}}</a></li>
+                <li><a ui-sref="inner.other">{{'OTHER_MASTER' | translate}}</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li navbar-right><a ng-click="changeLang()">{{currentLang()}}</a></li>
+            </ui>
+
+        </div>
+        <!--/.nav-collapse -->
+    </div>
+</nav>
+
+<div class="container">
+    <div class="content">
+        <section ui-view="mainContent"></section>
     </div>
 </div>
+<!-- /.container -->

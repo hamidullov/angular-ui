@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- build:css css/project.css -->
-    <!--<link href="css/bootstrap.css" rel="stylesheet">-->
+    <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+     <link href="lib/angular-ui-select/dist/select.min.css" rel="stylesheet">
     <!-- endbuild -->
 
     <!-- build:js js/project.js -->
@@ -16,6 +17,8 @@
     <script src="lib/angular/angular.min.js"></script>
     <script src="lib/angular-ui-router/release/angular-ui-router.min.js"></script>
     <script src="lib/angular-translate/angular-translate.min.js"></script>
+    <script src="lib/angular-ui-select/dist/select.min.js"></script>
+    <script src="lib/angular-sanitize/angular-sanitize.min.js"></script>
 
     <!-- app -->
     <script src="js/app.js"></script>
@@ -24,14 +27,23 @@
     <script src="js/app-translate.js"></script>
     <script src="js/app-controller.js"></script>
 
+    <!-- filters -->
+    <script src="js/components/filters/toTrusted/toTrusted-filter.js"></script>
+
+
     <!-- services -->
     <script src="js/components/services/locale/locale-service.js"></script>
 
     <!-- pages -->
-    <script src="js/menu/menu-controller.js"></script>
+    <script src="js/home/home-controller.js"></script>
     <script src="js/payments/payments-controller.js"></script>
     <script src="js/about/about-controller.js"></script>
     <script src="js/templates.js"></script>
+    <script src="js/controls/controls-controller.js"></script>
+    <script src="js/other/other-controller.js"></script>
+    
+    <!-- ui controls -->
+    <script src="js/components/directives/uiControls/mySelect/mySelect-directive.js"></script>
 
     <!-- endbuild -->
 

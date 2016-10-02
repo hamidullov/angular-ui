@@ -1,0 +1,11 @@
+<div style="width:250px;">
+    <my-select
+        required
+        ng-model="myValue.selected"
+        name="sendCountry"
+        list="itemArray"                         
+        repeat = "item in list | filter : {name: $select.search} : startsWith track by item.id" 
+        list-item-template="'<b>{{name}}</b>'"
+        selected-item-template="<b>{{myValue.selected.name}}</b>">
+    </my-select>    
+</div>  
